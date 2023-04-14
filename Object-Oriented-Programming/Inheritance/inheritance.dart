@@ -1,5 +1,5 @@
 import 'dart:math';
-import './helper.dart';
+import 'assist.dart';
 
 void main() {
   String playerName = prompt('Enter your name: ');
@@ -33,7 +33,7 @@ void main() {
       print('Congratulations, ${player.name}! You won!');
       isRunning = false;
     } else {
-      player.takeDamage(dragon);
+      dragon.attack(player);
 
       if (player.health <= 0) {
         print('Sorry, ${player.name}. You lost.');

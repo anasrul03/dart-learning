@@ -14,7 +14,6 @@ void main() {
 
   while (isRunning) {
     print('What do you want to do? (attack/heal)');
-
     String choice = prompt('> ');
 // PLayer decision
     switch (choice.toLowerCase()) {

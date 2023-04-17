@@ -15,6 +15,7 @@ class Character implements BaseCharacter {
   late int health;
   final int strength;
   final String name;
+
   bool isAlive() {
     return health <= 0;
   }
